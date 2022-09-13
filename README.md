@@ -10,10 +10,12 @@ This visualizer was cut out from a GitHub Action that creates an SVG diagram of 
 yarn build
 ```
 
-### Extract data from demo
+A `repo-visualizer.js` file should appear in your curren directory.
+
+### Extract data from git in current directory
 
 ```
-node process-repo.js
+node repo-visualizer.js
 ```
 
 ### Run 
@@ -22,16 +24,20 @@ node process-repo.js
 bun dev
 ```
 
+Now open `localhost:3000` in your browser.
+
 ## TODO
 
 * add back interactive capabilities mentioned in the original post
 * make it into a proper library - portable and working with any repo
 * add back ability to generate static SVG
 * modify the original action to use the library
+* improve argument parsing
 
 ## Inputs (from original action)
 
-Please note these inputs do not work in the standalone version (yet).
+Please note these inputs may not work in the standalone version as they have not been tested.
+There is no reporting of wrong arguments etc.
 
 ### `output_file`
 
